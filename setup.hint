@@ -1,0 +1,4 @@
+category: Games
+requires: libgcc1 libQtCore4 libQtGui4 libQtNetwork4 libstdc++6
+sdesc: "Qt4 word unscrambling game"
+ldesc: "A word unscrambling game for Qt4."
