@@ -1,0 +1,22 @@
+--- origsrc/connectagram-1.2.1/src/score_board.cpp	2014-12-23 06:32:40.000000000 -0600
++++ src/connectagram-1.2.1/src/score_board.cpp	2015-04-26 13:55:44.848443300 -0500
+@@ -99,7 +99,7 @@ QTreeWidgetItem* ScoreBoard::createScore
+ 	if (secs == 0) {
+ 		return 0;
+ 	}
+-	int score = std::lround((count * length * 120.0) / secs);
++	int score = lround((count * length * 120.0) / secs);
+ 	if (score == 0) {
+ 		return 0;
+ 	}
+--- origsrc/connectagram-1.2.1/src/window.cpp	2015-01-09 12:22:34.000000000 -0600
++++ src/connectagram-1.2.1/src/window.cpp	2015-04-26 13:56:17.139543800 -0500
+@@ -328,7 +328,7 @@ void Window::gameFinished() {
+ 	m_pause_action->setDisabled(true);
+ 	m_success->show();
+ 
+-	m_scores->addScore(std::lround(msecs / 1000.0), count, length);
++	m_scores->addScore(lround(msecs / 1000.0), count, length);
+ }
+ 
+ //-----------------------------------------------------------------------------
