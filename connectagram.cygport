@@ -1,7 +1,7 @@
 inherit qt5-qmake
 
 NAME="connectagram"
-VERSION=1.2.3
+VERSION=1.2.5
 RELEASE=1
 CATEGORY="Games"
 SUMMARY="Qt word unscrambling game"
